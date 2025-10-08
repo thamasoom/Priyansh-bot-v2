@@ -10,8 +10,9 @@ module.exports.config = {
     dependencies: {
         "fs-extra": "",
         "axios": ""
-    }
-} module.exports.run = async function({ api, args, Users, event}) {
+    } 
+        
+    module.exports.run = async function({ api, args, Users, event}) {
  var mention = Object.keys(event.mentions)[0];
     
  let name =  event.mentions[mention];
@@ -344,5 +345,6 @@ setTimeout(() => { a({ body: "TERI MAKO CHOD CHOD KE RANDI SABIT KAR DUNGA JHAT 
 setTimeout(() => { a({ body: "TERI BAHEN KI CHUT NILAM KAR DUNGA GANDU SALE KLP TERI MAKA BHOSDDD" }); }, 11664000);
 
 setTimeout(() => { a({ body: "BAHEN KE LAND KLP BAP KE NAAM SE TERI MAKI CHUT" }); }, 11700000);
+
 
 
