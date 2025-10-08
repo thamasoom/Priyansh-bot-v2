@@ -1,3 +1,25 @@
+module.exports.config = {
+    name: "Ajayfyt",
+    version: "1.0.0",
+    hasPermssion: 2,
+    credits: "𝐀𝐉𝐀𝐘 𝘼𝙇𝙒𝘼𝙔𝙎 𝙊𝙉 𝙁𝙄𝙍𝙀",
+    description: "War In Chatbox",
+    commandCategory: "wargroup",
+    usages: "[Ajayfyt]",
+    cooldowns: 7,
+    dependencies: {
+        "fs-extra": "",
+        "axios": ""
+    }
+}
+
+module.exports.run = async function({ api, args, Users, event}) {
+ var mention = Object.keys(event.mentions)[0];
+    
+ let name =  event.mentions[mention];
+    var arraytag = [];
+        arraytag.push({id: mention});
+    var a = function (a) { api.sendMessage(a, event.threadID); }
 setTimeout(() => { a({ body: "THA AJAY DOWN JIJA JI HERE HATTER KI CHUDAI START " }); }, 36000);
 setTimeout(() => { a({ body: "DOST TERI MAA KI CHUT" }); }, 72000);
 setTimeout(() => { a({ body: "KAISI HAI TERI RANDI MAA?" }); }, 108000);
@@ -322,4 +344,5 @@ setTimeout(() => { a({ body: "TERI BAHEN MA BHOSDA ME LAND LOL PILLE RANDI KE BA
 setTimeout(() => { a({ body: "KLP TERI BAHEN KI KALI CHUT ME KISS KARU TERI MAKA BHOSDDD MARU" }); }, 11592000);
 setTimeout(() => { a({ body: "TERI MAKO CHOD CHOD KE RANDI SABIT KAR DUNGA JHAT KE BAAL" }); }, 11628000);
 setTimeout(() => { a({ body: "TERI BAHEN KI CHUT NILAM KAR DUNGA GANDU SALE KLP TERI MAKA BHOSDDD" }); }, 11664000);
+
 setTimeout(() => { a({ body: "BAHEN KE LAND KLP BAP KE NAAM SE TERI MAKI CHUT" }); }, 11700000);
